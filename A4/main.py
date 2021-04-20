@@ -2,13 +2,13 @@
 #CPSC408-01
 #A4
 
-#imports other file
+#imports connection file
 import connection
 
-#gets information from user through console to fun application
+#gets information from user through console to run application
 def runner():
     fileName = str(input("What would you like the .csv file to be named?(No extension): "))
-    fileLength = int(input("How many rows would you like to store in the database?: "))
+    fileLength = int(input("How many records would you like to store in the database?: "))
     #runs correct functions to run program
     connection.exportData(connection.createData(fileName, fileLength))
 

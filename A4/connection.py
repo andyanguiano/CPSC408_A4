@@ -15,7 +15,7 @@ db = mysql.connector.connect(
     database="aanguiano_db"
 )
 
-#takes file name and number of rows to create and creats fake rows and adds to .csv file
+#takes file name and number of records to create and creats fake rows and adds to .csv file
 def createData(fileName, numRows):
     #adds extension and opens file to write
     fileName = fileName + ".csv"
